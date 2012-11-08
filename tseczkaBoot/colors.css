@@ -1,0 +1,8 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+footer{background-color:#58595b;color:#fff}footer a{color:#e6e6e6}footer h3,footer h4{color:#fff}
+
+@keyframes progress-bar-stripes {
+  from  { background-position: 0 0; }
+  to    { background-position: 40px 0; }
+}
+

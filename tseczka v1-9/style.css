@@ -1,0 +1,594 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/*
+Theme Name: Tseczka Theme
+
+Description: Basic Custom Part Theme
+
+Version: 1.9
+
+License: Open For Anyone To Use
+
+License URI: none
+
+Author: Antonin Januska
+
+Author URI: http://antjanus.com/tseczkav1-9
+
+Theme URI: http://antjanus.com
+
+Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-post, microformats
+
+*/
+/* Colors */
+/* COLORS */
+/* unadjusted main color */
+/* saturated light  */
+/* less saturated */
+/* saturated dark */
+/* less saturated dark */
+/* framework */
+.grid_1 {
+  width: 6.15%;
+}
+.grid_2 {
+  width: 14.583%;
+}
+.grid_3 {
+  width: 22.917%;
+}
+.grid_4 {
+  width: 31.25%;
+}
+.grid_5 {
+  width: 39.583%;
+}
+.grid_6 {
+  width: 47.917%;
+}
+.grid_7 {
+  width: 56.25%;
+}
+.grid_8 {
+  width: 64.583%;
+}
+.grid_9 {
+  width: 72.917%;
+}
+.grid_10 {
+  width: 81.25%;
+}
+.grid_11 {
+  width: 89.583%;
+}
+.grid_12 {
+  width: 97.917%;
+  margin: 0;
+}
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  margin-left: 1.7%;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  zoom: 1;
+  overflow: hidden;
+  *display: inline;
+}
+.offset_1 {
+  margin-left: 9.55%;
+}
+.offset_2 {
+  margin-left: 17.4%;
+}
+.offset_3 {
+  margin-left: 25.25%;
+}
+.offset_4 {
+  margin-left: 33.1%;
+}
+.alpha {
+  margin-left: 0px;
+}
+.omega {
+  margin-right: 0px;
+}
+.container {
+  min-width: 740px;
+  max-width: 1024px;
+  padding: 1.5em;
+  margin-left: -1.7%;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container-full {
+  margin-left: -1.7%;
+  min-width: 790px;
+  max-width: 1024px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+* html .clearfix, *:first-child + html .clearfix {
+  zoom: 1;
+}
+/* Basics */
+/************************* BASICS 
+**********************************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+input {
+  margin: 0;
+}
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: #111;
+}
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+h2 {
+  font-size: 1.75em;
+  line-height: 1.715em;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+h4 {
+  font-weight: bold;
+}
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+p + ul, p + ol {
+  padding-top: 0;
+}
+ul + p, ol + p {
+  padding-top: 0;
+}
+ul, ol {
+  padding: 1.5em;
+}
+blockquote {
+  padding: .75em 1.5em;
+}
+.post img {
+  padding: 1.5em;
+}
+.wp-smiley {
+  padding: 0 !important;
+}
+pre {
+  margin: 1.5em 0;
+  padding: .75em 1.5em;
+  background: rgba(0, 0, 0, 0.1);
+}
+/* navigation */
+/************************* HEADER & NAVIGATION
+**********************************************/
+header {
+  padding: 1.5em 0;
+}
+nav {
+  text-align: right;
+  padding: .75em 0;
+  margin: 0;
+  overflow: visible;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+nav ul li {
+  display: inline;
+  padding: 0 .5em;
+  float: left;
+}
+nav ul li:last-child {
+  clear: right;
+}
+nav ul li ul {
+  display: none;
+  background: #fff;
+  text-align: left;
+  border-bottom: 3px solid #58595B;
+  margin-left: -0.375em;
+}
+nav ul li ul li {
+  display: block;
+  float: none;
+  padding: .375em;
+}
+nav ul li:hover ul {
+  display: block;
+  position: absolute;
+}
+/* sidebar */
+/************************* SIDEBAR
+**********************************************/
+#sidebar ul {
+  padding: .75em 1.25em;
+}
+#sidebar a {
+  font-weight: normal;
+}
+/* slider */
+/************************* SLIDER
+**********************************************/
+#innerSlide img {
+  width: 100%;
+}
+#innerSlide {
+  width: 1024px;
+  height: 528px;
+  overflow: hidden;
+}
+#sNav {
+  height: 96px;
+  margin: .75em auto;
+}
+#sNavList {
+  padding: .75em;
+  text-align: center;
+}
+#sNav ul {
+  list-style-type: none;
+}
+#sNav li {
+  height: 72px;
+  width: 72px;
+  padding: 0 30px;
+  overflow: hidden;
+  display: inline;
+}
+/* footer */
+/************************* FOOTER
+**********************************************/
+footer ul {
+  padding: 0;
+}
+footer ul li a {
+  font-weight: normal;
+}
+#footNav {
+  text-align: right;
+}
+#footNav ul {
+  padding: 0;
+}
+#footNav ul li {
+  display: inline;
+  padding: 0 .5em;
+}
+#footNav a {
+  font-weight: normal;
+}
+#footerCopy {
+  padding: .75em 1.5em;
+}
+#footerCopy img {
+  vertical-align: middle;
+  height: 1.5em;
+}
+/* forms */
+/************************* FORMS
+**********************************************/
+input[type=text] {
+  font-size: 1em;
+  height: 1.5em;
+  padding: 0 .25em;
+  border: 1px solid #888;
+  box-shadow: 0 0 3px #999 inset;
+  border-radius: 3px;
+}
+input[type=text]:active {
+  box-shadow: 0;
+}
+textarea {
+  margin: 0;
+  font-size: 1em;
+  padding: 0 .25em;
+  border: 1px solid #888;
+  box-shadow: 0 0 3px #999 inset;
+  border-radius: 3px;
+}
+textarea:active {
+  box-shadow: 0;
+}
+.post input[type=text], textarea {
+  width: 340px;
+}
+/* Worpress Specific */
+/************************* WORDPRESS CORE
+**********************************************/
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+.sticky {
+  padding: 1% 2%;
+  border: 1px solid #aeaeae;
+  background: rgba(233, 233, 233, 0.6);
+}
+.gallery-caption {
+  /* if necessary, add code here */
+
+}
+/* EXTRAS */
+/************************* COLUMNS
+**********************************************/
+/* ------- Fluid Columns ------- */
+.one_half {
+  width: 48%;
+}
+.one_third {
+  width: 30.66%;
+}
+.two_third {
+  width: 65.33%;
+}
+.one_fourth {
+  width: 22%;
+}
+.three_fourth {
+  width: 74%;
+}
+.one_fifth {
+  width: 16.8%;
+}
+.two_fifth {
+  width: 37.6%;
+}
+.three_fifth {
+  width: 58.4%;
+}
+.four_fifth {
+  width: 67.2%;
+}
+.one_sixth {
+  width: 13.33%;
+}
+.five_sixth {
+  width: 82.67%;
+}
+.one_half,
+.one_third,
+.two_third,
+.three_fourth,
+.one_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+  position: relative;
+  margin-right: 4%;
+  float: left;
+}
+.last {
+  margin-right: 0 !important;
+  clear: right;
+}
+/************************* CLASSES
+**********************************************/
+.unseen {
+  position: absolute;
+  margin-left: -999999px;
+}
+.noformat {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+footer {
+  background-color: #58595b;
+  color: #ffffff;
+}
+footer a {
+  color: #e6e6e6;
+}
+footer h3, footer h4 {
+  color: #ffffff;
+}
