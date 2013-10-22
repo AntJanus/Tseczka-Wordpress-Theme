@@ -31,6 +31,6 @@ Close enough. All that needs to be done is adding a back­ground, and a line of 
 LOG
 ===========
 
-* v2.0.1 - Clean copy of tseczka
+* v2.0.1 - Clean copy of tseczka. Cleanly pulled.
 * v2.0.0 - Final working version before major restructuring.
 
