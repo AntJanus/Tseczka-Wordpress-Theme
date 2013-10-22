@@ -1,16 +1,7 @@
 Tseczka-Wordpress-Theme
 =======================
 
-Basic wordpress theme meant for rapid and fully featured development. 
-
-
-Versions 
-=========
-There are currently Three versions, two of which are effectively deprecated.
-
-* **Tseczka** is the working copy
-* **Tseczka V1.9** is copy that's based on the old 1.* structure. Still works with modern WP installations
-* **TseczkaBoot** an older version based on Bootstrap V1
+Basic wordpress theme meant for rapid and fully featured development.
 
 FAQ
 ===========
@@ -36,3 +27,10 @@ I would say agility and the LACK of great fea­tures: font icons, 50 dif­fer­e
 
 ## Does This Work Straight Out The Box? ##
 Close enough. All that needs to be done is adding a back­ground, and a line of code or two and you’re pretty much done but then you’ll have the “default” look. With just a few lines more of code, over­rid­ing some set­tings, and some intu­ition, your site will look unrec­og­niz­able from my iterations.
+
+LOG
+===========
+
+* v2.0.1 - Clean copy of tseczka
+* v2.0.0 - Final working version before major restructuring.
+
