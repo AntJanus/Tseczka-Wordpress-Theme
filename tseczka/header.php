@@ -13,18 +13,6 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <meta name="title" content="<?php wp_title(''); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
-<meta name="DC.title" content="<?php wp_title(''); ?>">
-<meta name="DC.description" content="<?php if ( is_single() ) {
-        single_post_title('', true); 
-    } else {
-        bloginfo('name'); echo " - "; bloginfo('description');
-    }
-    ?>">
-<meta name="DC.language" scheme="ISO639-1" content="en">
-<meta name="DC.publisher" content="<?php bloginfo('name');?>">
-<!-- END DUBLIN CORE -->
-
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
@@ -37,15 +25,15 @@
 
 <script>
 jQuery(document).ready(function(){
-jQuery('#innerSlide').cycle({ 
-    fx:     'scrollRight', 
+jQuery('#innerSlide').cycle({
+    fx:     'scrollRight',
     speed: 2000,
     timeout: 3000,
-    pager:  '#sNavList', 
-        pagerAnchorBuilder: function(idx, slide) { 
-        // return selector string for existing anchor 
+    pager:  '#sNavList',
+        pagerAnchorBuilder: function(idx, slide) {
+        // return selector string for existing anchor
         return '<li><a href="#"><img src="' + jQuery(" img", slide).attr("src") +'" alt="" height="72px" /></a></li>';
-    }  
+    }
 });
 
 });

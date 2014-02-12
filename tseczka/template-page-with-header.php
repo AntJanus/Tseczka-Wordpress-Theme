@@ -17,7 +17,6 @@ Template Name: Regular Page With Header
 <link rel="shortcut icon" href="favicon.ico" />
 <meta name="title" content="<?php wp_title(''); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
