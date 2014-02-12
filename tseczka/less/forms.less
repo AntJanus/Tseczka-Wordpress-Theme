@@ -1,33 +1,33 @@
 
 /************************* FORMS
 **********************************************/
-input[type=text]{
+input[type=text], input[type=email], input[type=password]{
 	font-size: 1em;
 	height: 1.5em;
 	padding: 0 .25em;
 	border: 1px solid #888;
 	box-shadow: 0 0 3px #999 inset;
 	border-radius: 3px;
-}
 
-input[type=text]:active{
-	box-shadow: 0;	
+	&:active {
+		box-shadow: 0;
+	}
 }
 
 
 textarea{
-	margin: 0;	
+	margin: 0;
 	font-size: 1em;
 	padding: 0 .25em;
 	border: 1px solid #888;
 	box-shadow: 0 0 3px #999 inset;
 	border-radius: 3px;
+
+	&:active{
+		box-shadow: 0;
+	}
 }
 
-textarea:active{
-	box-shadow: 0;	
-}
-
-.post input[type=text], textarea{
-	width: 340px;	
+.post input[type=text], input[type=email], input[type=password], textarea{
+	width: 340px;
 }
