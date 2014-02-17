@@ -2,9 +2,7 @@
 /*
 TO DO
 * break up into separate files (like Widgets should be its own)
-* clean up! / remove irrelevant shit
-*
-
+* clean up! / remove irrelevant stuff
 */
 
 /* GLOBALS */
@@ -88,8 +86,4 @@ function excerpt_read_more_link($output) {
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
-remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-
-
-/**************************** SOME STUFF FROM ROOTS (https://github.com/retlehs/roots)************************/
-
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');g
