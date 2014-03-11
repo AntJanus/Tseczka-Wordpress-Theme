@@ -34,3 +34,15 @@ LOG
 * v2.0.1 - Clean copy of tseczka. Cleanly pulled.
 * v2.0.0 - Final working version before major restructuring.
 
+
+To-do's
+===========
+* [X] redo grids for Foundation (and remove clearfixes)
+* [X] break out templates into `/inc` folder
+* [X] add custom metaboxes that allow sidebar switching
+* [X] implement sidebar switching
+* [ ] custom navigation
+* [ ] better/varied typography
+* [ ] add buttons and other CSS components
+* [X] redo the way code looks (indents etc.)
+* [ ] redo microformatting

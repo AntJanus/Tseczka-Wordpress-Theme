@@ -1,27 +1,19 @@
 <?php
 // SIDEBARS
-if ( function_exists('register_sidebar') )
-register_sidebar(array('name'=>'Main',
+register_sidebar(array('name'=>'footer-intro',
 'before_widget' => '',
 'after_widget' => '',
 'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 
-register_sidebar(array('name'=>'footerIntro',
+register_sidebar(array('name'=>'footer-left',
 'before_widget' => '',
 'after_widget' => '',
 'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
-
-register_sidebar(array('name'=>'footerLeft',
-'before_widget' => '',
-'after_widget' => '',
-'before_title' => '<h3>',
-'after_title' => '</h3>',
-));
-register_sidebar(array('name'=>'footerMid',
+register_sidebar(array('name'=>'footer-mid',
 'before_widget' => '',
 'after_widget' => '',
 'before_title' => '<h3>',
@@ -29,10 +21,20 @@ register_sidebar(array('name'=>'footerMid',
 
 ));
 
-register_sidebar(array('name'=>'footerEnd',
+register_sidebar(array('name'=>'footer-end',
 'before_widget' => '',
 'after_widget' => '',
 'before_title' => '<h3>',
 'after_title' => '</h3>',
 
 ));
+
+for($i = 1; $i <= SIDEBAR_COUNT; $i++) {
+    register_sidebar(array(
+        'name'=>'sidebar-'.$i,
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
+}

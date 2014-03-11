@@ -6,8 +6,9 @@ TO DO
 */
 
 /* GLOBALS */
-define('SS_URI', get_stylesheet_directory());
-
+define('SS_DIR', get_stylesheet_directory())
+define('SS_URI', get_stylesheet_directory_uri());
+define('SIDEBAR_COUNT', 3);
 
 /* LOAD SCRIPTS*/
 function load_scripts() {
@@ -86,4 +87,9 @@ function excerpt_read_more_link($output) {
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
-remove_filter('get_the_excerpt', 'wp_trim_excerpt');g
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+
+
+//includes
+
+require_once (SS_DIR . '/lib/metabox/sidebar-metaboxes.php');
