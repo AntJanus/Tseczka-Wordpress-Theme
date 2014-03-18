@@ -29,7 +29,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
                     'options' => $sidebar_options
                 )
             )
-        )
+        );
 
     return $meta_boxes;
 }

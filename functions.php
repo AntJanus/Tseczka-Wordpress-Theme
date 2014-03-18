@@ -6,7 +6,7 @@ TO DO
 */
 
 /* GLOBALS */
-define('SS_DIR', get_stylesheet_directory())
+define('SS_DIR', get_stylesheet_directory());
 define('SS_URI', get_stylesheet_directory_uri());
 define('SIDEBAR_COUNT', 3);
 
@@ -31,15 +31,7 @@ include('functions/sidebars.php');
 //roots extras
 include('functions/roots-extras.php');
 
-//header image
-include('functions/')
-
-
-/* PRESETS */
-// content width
-if ( ! isset( $content_width ) ) $content_width = 750;
-
-// menu
+//menu
 function register_my_menus() {
 register_nav_menus(
 		array(
@@ -78,8 +70,7 @@ add_editor_style('tiny-mce-style.css');
 
 // Feeds
 add_theme_support( 'automatic-feed-links' );
-add_custom_background();
-
+add_theme_support('custom-background');
 // Exceprts
 function excerpt_read_more_link($output) {
  global $post;
