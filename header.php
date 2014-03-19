@@ -22,7 +22,9 @@
 </head>
 <body <?php body_class();?>>
 
-<header class="row">
-  <div id="logo" class="large-6 columns">  <h1><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></h1></div>
-  <nav class="large-6 columns">	<?php wp_nav_menu( array('theme_location' => 'main', 'depth' => 3 )); ?></nav>
+<header class="nav-container nav-main nav-right">
+    <div class="nav">
+        <a href="<?php echo home_url(); ?>" class="nav-title emboss"><?php bloginfo('name'); ?></a>
+        <?php wp_nav_menu( array('theme_location' => 'main', 'depth' => 1)); ?>  
+    </div>
 </header>
