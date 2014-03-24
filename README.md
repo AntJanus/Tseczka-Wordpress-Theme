@@ -41,8 +41,11 @@ To-do's
 * [X] break out templates into `/inc` folder
 * [X] add custom metaboxes that allow sidebar switching
 * [X] implement sidebar switching
-* [ ] custom navigation
-* [ ] better/varied typography
-* [ ] add buttons and other CSS components
+* [X] custom navigation
+* [X] better/varied typography
+* [X] add buttons and other CSS components
 * [X] redo the way code looks (indents etc.)
 * [ ] redo microformatting
+* [ ] Implement WP Snippets
+* [ ] add prettify.js component
+* [ ] Start formatting blog feed (use existing extras styles)
