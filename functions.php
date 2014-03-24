@@ -35,9 +35,9 @@ include('functions/roots-extras.php');
 function register_my_menus() {
 register_nav_menus(
 		array(
-		  'main' => 'Main navigation menu',
-		  'footerNav' => 'Footer Navigation',
-		  'superNav' => 'Super Navigation'
+		  'main-menu' => 'Main navigation menu',
+		  'footer-nav' => 'Footer Navigation',
+		  'super-nav' => 'Super Navigation'
 		)
 );
 }
