@@ -12,6 +12,16 @@ TODO:
 
 **/
 
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+
+
 //body
 body {
     color: @font-color;
@@ -193,4 +203,9 @@ pre{
     margin: 0 @baseline-height;
     padding: .75em 1.5em;
     background: rgba(0,0,0,.1);
+}
+
+//images
+img {
+    max-width: 100%;
 }

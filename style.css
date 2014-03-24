@@ -44,6 +44,9 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
   float: right;
 }
 /* framework */
+body {
+  margin: 0;
+}
 .left {
   float: left !important;
 }
@@ -1339,6 +1342,13 @@ TODO:
 * expand "other elements"
 
 **/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   color: #222222;
   font-size: 1em;
@@ -1514,6 +1524,9 @@ pre {
   margin: 0 1.5em;
   padding: .75em 1.5em;
   background: rgba(0, 0, 0, 0.1);
+}
+img {
+  max-width: 100%;
 }
 /* navigation */
 /*

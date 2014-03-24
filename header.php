@@ -25,6 +25,6 @@
 <header class="nav-container nav-main nav-right">
     <div class="nav">
         <a href="<?php echo home_url(); ?>" class="nav-title emboss"><?php bloginfo('name'); ?></a>
-        <?php wp_nav_menu( array('theme_location' => 'main', 'depth' => 1, 'container' => false)); ?>  
+        <?php wp_nav_menu( array('theme_location' => 'main-menu', 'depth' => 1, 'container' => false)); ?>
     </div>
 </header>
