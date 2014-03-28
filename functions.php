@@ -75,8 +75,6 @@ function excerpt_read_more_link($output) {
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
-remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-
 
 //includes
 

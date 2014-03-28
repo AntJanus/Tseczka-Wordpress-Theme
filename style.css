@@ -1541,9 +1541,10 @@ img {
  * a
  */
 .nav-container .nav {
-  max-width: 56em;
-  margin: 0 auto;
   height: 3em;
+  width: 62.5em;
+  margin: 0 auto;
+  padding: 0 0.9375em;
 }
 .nav-main {
   background: #b5512d;
