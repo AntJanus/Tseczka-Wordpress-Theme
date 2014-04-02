@@ -46,6 +46,6 @@ To-do's
 * [X] add buttons and other CSS components
 * [X] redo the way code looks (indents etc.)
 * [ ] redo microformatting
-* [ ] Implement WP Snippets
+* [X] Implement WP Snippets
 * [ ] add prettify.js component
 * [ ] Start formatting blog feed (use existing extras styles)

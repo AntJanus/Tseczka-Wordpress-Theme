@@ -3,15 +3,15 @@
 <section id="main-content" class="row">
   <section id="content-posts" class="large-8 columns">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <article id="post-<?php the_ID();?>" <?php post_class('post hentry hnews single');?>>
+      <article id="post-<?php the_ID();?>" <?php post_class('post single feed-item');?>>
         <h2 class="entry-title item fn"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h2>
 
-        <p class="meta vcard">
-          <time class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate> <?php echo $postDate2; ?></time>
-          | <span class="byline fn author"> <?php the_author_posts_link(); ?></span>
-          | <a href="mailto:<?php the_author_meta('email'); ?>" class="email author">email</a>
-          | <?php the_category(', '); ?> | <?php the_tags(); ?>
-        </p>
+        <ul class="list-meta">
+          <li><time class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate><?php echo $postDate2; ?></time></li>
+          <li><span class="byline fn author"> <?php the_author_posts_link(); ?></span></li>
+          <li><?php the_category(', '); ?></li>
+          <li><?php the_tags(); ?></li>
+        </ul>
 
         <div class="post-content entry-content">
           <?php
