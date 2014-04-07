@@ -48,4 +48,5 @@ To-do's
 * [ ] redo microformatting
 * [X] Implement WP Snippets
 * [ ] add prettify.js component
-* [ ] Start formatting blog feed (use existing extras styles)
+* [x] Start formatting blog feed (use existing extras styles)
+* [ ] Gather inspiration for styling

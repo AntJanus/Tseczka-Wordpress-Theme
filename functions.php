@@ -68,10 +68,12 @@ add_editor_style('tiny-mce-style.css');
 // Feeds
 add_theme_support( 'automatic-feed-links' );
 add_theme_support('custom-background');
+
+
 // Exceprts
 function excerpt_read_more_link($output) {
  global $post;
- return $output . '<a href="'. get_permalink($post->ID) . '"> Read More...</a>';
+ return $output . '<a href="'. get_permalink($post->ID) . '" class="button main">Read More</a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 

@@ -1356,6 +1356,7 @@ body {
   font-family: 'Segoe UI', Verdana, Arial, sans-serif;
 }
 a {
+  text-decoration: none;
   color: #b5512d;
 }
 a.secondary {
@@ -1718,7 +1719,11 @@ textarea {
 /* POST */
 /* CSS Document */
 .entry-title {
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-bottom: .25em;
+}
+.entry-title a {
+  color: #222222;
 }
 /* EXTRAS */
 /************************* COLUMNS
@@ -1786,60 +1791,6 @@ textarea {
   padding: 0 !important;
   margin: 0 !important;
 }
-/************************* NEWS
-**********************************************/
-/************************* NEWS
-**********************************************/
-#newsWidget {
-  width: 280px;
-  min-height: 200px;
-}
-#newsWidget h4 {
-  color: #222222;
-}
-#newsWidget ul {
-  list-style-type: none;
-  padding: 0;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  vertical-align: top;
-  width: 230px;
-}
-#newsWidget ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid #aeaeae;
-}
-#newsWidget ul li:first-child {
-  padding-top: 0;
-}
-#newsWidget ul img {
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-  border: 1px solid #aeaeae;
-}
-#newsWidget ul div {
-  float: right;
-  width: 65%;
-  font-size: .9em;
-}
-#newsWidget ul div span {
-  display: block;
-  font-size: .7em;
-}
-.newsSquare {
-  width: 55px;
-  height: 55px;
-  float: left;
-}
-.newsWidgetLink {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  vertical-align: top;
-  width: 45px;
-}
 .block-list {
   display: block;
   width: 100%;
@@ -1872,14 +1823,24 @@ textarea {
   display: inline-block;
   vertical-align: top;
   font-size: .9em;
-  padding: 0.75em 0.75em 0.75em 0;
 }
 .feed-list > li {
   border-top-width: 0;
   margin: 1em 0;
 }
 .feed-item {
-  padding: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  border-bottom: 3px solid #b5512d;
+}
+.feed-item .feed-thumb {
+  float: left;
+  box-sizing: content-box;
+  margin-right: 15px;
+  box-shadow: 0 0 1px #999;
+}
+.feed-item .feed-content {
+  min-height: 150px;
 }
 /**
 Button

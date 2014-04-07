@@ -42,7 +42,6 @@
         li{
             .inline;
             font-size: .9em;
-            padding: (@baseline-height/2) (@baseline-height/2) (@baseline-height/2) 0;
         }
 }
 
@@ -56,5 +55,19 @@
 }
 
 .feed-item{
-    padding: .75em;
+    padding-right: .75em;
+    padding-bottom: .75em;
+    border-bottom: 3px solid @main-color;
+
+  .feed-thumb {
+    float: left;
+    box-sizing: content-box;
+    margin-right: 15px;
+    box-shadow: 0 0 1px #999;
+  }
+
+  .feed-content {
+    min-height: 150px;
+  }
 }
+
