@@ -56,7 +56,7 @@
 
 .feed-item{
     padding-right: .75em;
-    padding-bottom: .75em;
+    padding-bottom: 1em;
     border-bottom: 3px solid @main-color;
 
   .feed-thumb {
@@ -68,6 +68,38 @@
 
   .feed-content {
     min-height: 150px;
+  }
+}
+
+//widget style list
+.widget-list {
+  h4 {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding: .25 0 .75em;
+
+    &>li:last-child {
+      border-bottom: 0;
+    }
+
+    li {
+      padding: .25em;
+      border-bottom: 1px solid @base-light-grey;
+      span {
+        font-size: @font-size * .90;
+        color: @base-light-grey;
+      }
+      a {
+        color: @base-grey;
+        font-weight: bold;
+        font-size: @font-size * .95;
+      }
+    }
   }
 }
 

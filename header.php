@@ -11,6 +11,7 @@
 
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
 
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>

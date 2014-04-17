@@ -20,16 +20,13 @@
 
 				<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('footerRight') ) : else : ?>
 
-
-
 				<?php endif; ?>
 </div>
 </div>
 </footer>
 
 <div id="footer-copy" class="row">
-<div class="large-6 columns">
-2011 &copy; Antonin Januska&nbsp;&nbsp;&nbsp;<a href="http://antjanus.com"><img src="<?php echo get_template_directory_uri(); ?>/images/themes.png" /></a>
-</div>
- <div id="foot-nav" class="large-6 columns">	<?php wp_nav_menu( array('theme_location' => 'footerNav', 'depth' => 1 )); ?> </div>
+  <div class="large-6 columns">
+  2014 &copy; Antonin Januska
+  </div>
  </div>

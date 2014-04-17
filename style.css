@@ -1353,7 +1353,7 @@ body {
   color: #222222;
   font-size: 1em;
   line-height: 1.5em;
-  font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
 }
 a {
   text-decoration: none;
@@ -1618,14 +1618,8 @@ img {
 .nav-right .nav-title {
   float: left;
 }
-/* sidebar */
-/************************* SIDEBAR
-**********************************************/
-#sidebar ul {
-  padding: .75em 1.25em;
-}
-#sidebar a {
-  font-weight: normal;
+.pagination {
+  padding: .75em;
 }
 /* footer */
 .footer {
@@ -1661,7 +1655,7 @@ button,
 select,
 textarea {
   font-size: 1em;
-  font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
   line-height: 1.5em;
 }
 input,
@@ -1820,7 +1814,7 @@ textarea {
 }
 .feed-item {
   padding-right: .75em;
-  padding-bottom: .75em;
+  padding-bottom: 1em;
   border-bottom: 3px solid #b5512d;
 }
 .feed-item .feed-thumb {
@@ -1831,6 +1825,31 @@ textarea {
 }
 .feed-item .feed-content {
   min-height: 150px;
+}
+.widget-list h4 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.widget-list ul {
+  list-style: none;
+  margin-left: 0;
+  padding: .25 0 .75em;
+}
+.widget-list ul > li:last-child {
+  border-bottom: 0;
+}
+.widget-list ul li {
+  padding: .25em;
+  border-bottom: 1px solid #98999b;
+}
+.widget-list ul li span {
+  font-size: 0.9em;
+  color: #98999b;
+}
+.widget-list ul li a {
+  color: #58595b;
+  font-weight: bold;
+  font-size: 0.95em;
 }
 /**
 Button
