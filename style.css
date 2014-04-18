@@ -1829,11 +1829,13 @@ textarea {
 .widget-list h4 {
   margin-bottom: 0;
   line-height: 1;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 .widget-list ul {
   list-style: none;
   margin-left: 0;
-  padding: .25 0 .75em;
+  padding: .25 0 1em;
 }
 .widget-list ul > li:last-child {
   border-bottom: 0;
