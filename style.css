@@ -1519,6 +1519,12 @@ pre {
 img {
   max-width: 100%;
 }
+/* sidebar */
+/************************* SIDEBAR
+**********************************************/
+#inner-side > .widget-list:first-child h4 {
+  margin-top: 25px;
+}
 /* navigation */
 /*
  * Navbar
@@ -1825,12 +1831,14 @@ textarea {
 }
 .feed-item .feed-content {
   min-height: 150px;
+  padding: .75em 0;
 }
 .widget-list h4 {
   margin-bottom: 0;
   line-height: 1;
   font-size: 1.1em;
   text-transform: uppercase;
+  margin-left: 5px;
 }
 .widget-list ul {
   list-style: none;
