@@ -8,7 +8,7 @@
 
         <ul class="list-meta">
           <li><time class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate><?php echo $postDate2; ?></time></li>
-          <li>Author: <span class="byline fn author"> <?php the_author_posts_link(); ?></span></li>
+          <li>Author: <span class=""> <?php the_author_posts_link(); ?></span></li>
         </ul>
 
         <div class="post-content feed-content">
