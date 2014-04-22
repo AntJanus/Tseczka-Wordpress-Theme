@@ -16,8 +16,8 @@
           if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
             the_post_thumbnail('thumbnail', array('class' => 'feed-thumb'));
           }
+          the_excerpt();
           ?>
-          <?php the_excerpt(); ?>
         </div>
 
       </article>
