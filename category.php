@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <section id="main-content" class="row">
-  <section id="contentP-posts" class="large-8 columns">
+  <section id="content-posts" class="large-8 columns feed-list">
      <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
       <?php /* If this is a category archive */ if (is_category()) { ?>
         <h1>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category:</h1>
@@ -20,28 +20,29 @@
     <?php } ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <article id="post-<?php the_ID();?>" <?php post_class('post hentry hnews single');?>>
-      <h2 class="entry-title item fn"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h2>
+      <article id="post-<?php the_ID();?>" <?php post_class('post single feed-item');?> itemscope itemtype="http://schema.org/Article">
+        <h2 class="entry-title item fn"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="url"><?php the_title(); ?></a></h2>
 
-      <p class="meta  vcard"><time class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate> <?php echo $postDate2; ?></time>
-        | <span class="byline fn author"> <?php the_author_posts_link(); ?></span>
-         | <a href="mailto:<?php the_author_meta('email'); ?>" class="email author">email</a>
-          | <?php the_category(', '); ?>
-      </p>
+        <ul class="list-meta author vcard" itemscope itemtype="http://schema.org/Person" itemprop="author">
+          <li><time itemprop="datePublished" class="updated" datetime="<?php $postDate = get_the_date('c'); $postDate2 = get_the_date('d.m.Y'); echo $postDate ?>" pubdate><?php echo $postDate2; ?></time></li>
+          <li>Author: <span itemprop="name"> <?php the_author_posts_link(); ?></span></li>
+          <li>Categories: <?php the_category(', '); ?></li>
+        </ul>
 
-      <div class="post-content entry-content">
-        <?php the_excerpt(); ?>
+        <div class="post-content feed-content entry-content">
+          <?php
+          if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+            the_post_thumbnail('thumbnail', array('class' => 'feed-thumb', 'itemprop' => 'image'));
+          }
+          the_excerpt();
+          ?>
+        </div>
 
-        <p class="postmetadata unseen">Posted in
-          <?php the_category(', '); ?><br /><?php the_tags(); ?><br />
-          Source: <span class="vcard"><span class="source-org copyright"><?php bloginfo('name'); ?></span></span>
-        </p>
-      </div>
-    </article>
+      </article>
 
-    <?php endwhile; endif;?>
-    <div id="blog-nav">
-          <?php posts_nav_link( ' &#183 ', 'previous page &raquo;', ' &laquo; next page' ); ?>
+  <?php endwhile; endif;?>
+    <div class="pagination">
+      <?php posts_nav_link( ' &#183 ', 'previous page &raquo;', ' &laquo; next page' ); ?>
     </div>
   </section>
 
