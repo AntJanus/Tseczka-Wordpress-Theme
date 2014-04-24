@@ -13,11 +13,9 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
 <!-- schema.org -->
-<meta itemprop="name" content="" />
-<meta itemprop="url" content="" />
-<meta itemprop="creator accountablePerson" content="" />
-<meta itemprop="genre" content="" />
-<meta itemprop="description" name="description" content="" />
+<meta itemprop="name" content="<?php bloginfo('name'); ?>" />
+<meta itemprop="url" content="<?php bloginfo('url'); ?>" />
+<meta itemprop="creator accountablePerson" content="<?php echo get_the_author(); ?>" />
 
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
