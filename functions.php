@@ -13,6 +13,9 @@ define('SIDEBAR_COUNT', 3);
 /* LOAD SCRIPTS*/
 function load_scripts() {
   wp_enqueue_style('main', SS_URI.'/style.css', false, null, 'all');
+  wp_enqueue_script('prettifyJS', SS_URI.'/assets/prettify/prettify.js', false, null, 'all');
+  wp_enqueue_style('prettifyCSS', SS_URI.'/assets/prettify/prettify.css', false, null, 'all');
+  wp_enqueue_script('mainScript', SS_URI.'/js/main.js', false, null, 'all');
 }
 
 add_action( 'wp_enqueue_scripts', 'load_scripts');
