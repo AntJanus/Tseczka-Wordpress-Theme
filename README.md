@@ -1,52 +1,67 @@
-Tseczka-Wordpress-Theme
+Tseczka Wordpress Theme
 =======================
 
-Basic wordpress theme meant for rapid and fully featured development.
+Tseczka is a wordpress theme that I've been working on and updating for the past five years or so. With each update, I changed the architecture and brought in more abstraction as well as simplicity.
+
+As it stands right now, Tseczka is fully modular, incredibly simple to edit, and lightweight. It's barely opinionated and where it IS opinionated, you're one line of code away from changing it to your own tastes.
+
+What is has
+===========
+
+Tseczka has:
+
+* CSS framework called [Tseczka CSS](http://github.com/antjanus/tseczka-css-framework)
+* a full grid system ripped from [Foundation](http://foundation.zurb.com)
+* prettifyJS support in the /assets folder
+* various functions and bits for additional functionality
+* dead simple templates
+* tiny MCE styling to match the site
+* support for multiple sidebars, pick which one you want per page
+
+
+What it doesn't have
+=====================
+
+Tseczka lacks:
+
+* an options menu
+* opinionated PHP framework setup
+* child theme support
+* pretty looks out of the box
+
 
 FAQ
 ===========
 
-## Why Tseczka ##
-It’s sim­ple and removes the bloat other themes add on for the sake of hav­ing “all of the fea­tures”. If you’re look­ing for a “jump­start” theme you can copy/paste from into your own theme, to use as a ref­er­ence while build­ing your site, or to use entirely run your site, this one is for you!
+###Why Tseczka?
 
-## Will Tseczka Have All I need? ##
-Nope. But that’s the point. Tseczka has a lot of the basics that you just don’t want to bother with and that will stay per­sis­tent across all your sites. We have a basic-styled lay­out, a great frame­work, some basic queries, and lots of micro­for­mat­ting to make your site appeal­ing to Google. Pick and choose what you need to feel com­fort­able start­ing with and get going!
+Why indeed. Tseczka is what I call a "starter theme". It's a theme that you'd clone and make your own creation out of. Meaning that it's not meant to be extended, nor to be a full solution out of the box. It provides simple boilerplate in terms of PHP as well as CSS via the Tseczka CSS Framework. It is easily modifiable.
 
-## How About An Options Menu? ##
-Not even. The options acces­si­ble via the dash­board only apply to the basic for­mat­ting of the back­ground, as Word­Press offers, and pro­vide the abil­ity to also upload a header for the ban­ner tem­plate page. This is a devel­op­ment theme meant for developers.
+My main purpose for Tseczka was ot have a bloat-less skeleton that doesn't have an overwhelming amount of boilerplate and that is not opinionated
 
-## WTF Is "Tseczka"? ##
-It’s a strange way to spell a name of a strange “toy” pro­duced in Czech Repub­lic. The toy employs the use of sev­eral plas­tic “C’s” and “S’s” that link up together to form chains. Sim­i­lar to how this theme is meant to be mod­u­lar and “link” lots of parts together.
+###How about an options menu?
 
-## Cross Browser Support? ##
+Nope, never gonna happen. Tseczka is for developers, not for designers or for users! There are some options you can select from within the admin (well, one at the time of writing: which sidebar to use for a page/post). Everything else is programmed. I included a single global variable meant to specify the number of sidebars that's it.
 
-You bet! I kept the IE7 users in mind and used a lay­out frame­work that sup­ports IE7. Wouldn’t want to dis­qual­ify a large chunk of audi­ence that you may be tar­get­ing, right? That’d just be plain mean. Also, Opera.
+###How did you come up with this ridiculous name?
 
-## What Makes This Theme Special? ##
-I would say agility and the LACK of great fea­tures: font icons, 50 dif­fer­ent lay­out pages, mil­lions of short­codes, and so on. Why is this? Well, short­codes are great and all but add to the length and com­pli­ca­tion of the code. Lay­out pages are cool too but may be over­whelm­ing. Font icons? Add them if you need them. I’d rather not add any­thing but the basics
+Tseczka is a puzzle that used to be sold in Czech Republic that uses pieces of plastic shaped like "C"s and "S"s that could hook onto each other to create chains, bracelets, or whatever else for fun. It felt *fitting* to pick something that has to do with my heritage and that emphasizes modularity to create a final product.
 
-## Does This Work Straight Out The Box? ##
-Close enough. All that needs to be done is adding a back­ground, and a line of code or two and you’re pretty much done but then you’ll have the “default” look. With just a few lines more of code, over­rid­ing some set­tings, and some intu­ition, your site will look unrec­og­niz­able from my iterations.
+###Cross browser support?
+I haven't tested yet but should be IE9+ and modern versions of newer browsers. My previous incarnations <2.0.1 supported IE7 and the old Opera engine
+
+###What makes this theme so special?
+
+Lack of features, lack of 50 different layouts, lack of 50 million shortcuts, basically. The "lack of things" make this theme perfect for usage.
+
+###Does this work straight out of the box?
+
+Yes, but it's pretty much just like Bootstrap 2.X in that out of the box, it's okay but with an hour of work, it looks great. I've written about this a couple of years ago about [Bootstrap](http://antjanus.com/blog/web-design-tips/user-interface-usability/customize-twitter-bootstrap-into-themes/) and same principles apply here. Play around with changing variables and see what you can come up with. And don't feel too shy to dig into the LESS files themselves.
+
 
 LOG
 ===========
 
+* v3.0.0 - Completely new Tseczka
 * v2.0.1 - Clean copy of tseczka. Cleanly pulled.
 * v2.0.0 - Final working version before major restructuring.
-
-
-To-do's
-===========
-* [X] redo grids for Foundation (and remove clearfixes)
-* [X] break out templates into `/inc` folder
-* [X] add custom metaboxes that allow sidebar switching
-* [X] implement sidebar switching
-* [X] custom navigation
-* [X] better/varied typography
-* [X] add buttons and other CSS components
-* [X] redo the way code looks (indents etc.)
-* [ ] redo microformatting
-* [X] Implement WP Snippets
-* [ ] add prettify.js component
-* [x] Start formatting blog feed (use existing extras styles)
-* [ ] Gather inspiration for styling
