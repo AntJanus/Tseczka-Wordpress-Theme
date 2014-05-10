@@ -1,3 +1,5 @@
+![logo](images/tseczka-logo.png)
+
 Tseczka Wordpress Theme
 =======================
 
