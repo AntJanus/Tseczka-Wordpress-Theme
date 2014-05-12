@@ -1,6 +1,6 @@
 ![logo](images/tseczka-logo.png)
 
-Tseczka Wordpress Theme
+Tseczka Wordpress Theme v3
 =======================
 
 Tseczka is a wordpress theme that I've been working on and updating for the past five years or so. With each update, I changed the architecture and brought in more abstraction as well as simplicity.
@@ -59,7 +59,6 @@ Lack of features, lack of 50 different layouts, lack of 50 million shortcuts, ba
 ###Does this work straight out of the box?
 
 Yes, but it's pretty much just like Bootstrap 2.X in that out of the box, it's okay but with an hour of work, it looks great. I've written about this a couple of years ago about [Bootstrap](http://antjanus.com/blog/web-design-tips/user-interface-usability/customize-twitter-bootstrap-into-themes/) and same principles apply here. Play around with changing variables and see what you can come up with. And don't feel too shy to dig into the LESS files themselves.
-
 
 LOG
 ===========
