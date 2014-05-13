@@ -1,0 +1,13 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "gulp-autoprefixer": "0.0.7",
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-strip-debug": "^0.3.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-less": "^1.2.3"
+  }
+}
