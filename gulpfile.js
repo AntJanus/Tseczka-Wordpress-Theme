@@ -3,6 +3,7 @@ var stripDebug = require('gulp-strip-debug');
 var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
 var less = require('gulp-less');
+var jshint = require('gulp-jshint');
 
 gulp.task('scripts', function() {
   gulp.src(['./js/dev/*.js'])
@@ -20,7 +21,7 @@ gulp.task('styles', function() {
   ;
 });
 
-gulp.task('default', ['scripts'], function(){
+gulp.task('default', ['scripts', 'styles'], function(){
   gulp.watch('./js/dev/*.js', ['jshint', 'scripts']);
   gulp.watch('./less/*.less', ['styles']);
 });
