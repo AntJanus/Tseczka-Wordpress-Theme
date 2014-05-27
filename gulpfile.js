@@ -19,7 +19,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('default', ['scripts'], function(){
-  gulp.watch('./js/dev/*.js', function9) {
+  gulp.watch('./js/dev/*.js', function() {
     gulp.run('jshint', 'scripts');
   });
 
