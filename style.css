@@ -19,7 +19,10 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
 
 */
 /* Colors */
-/* COLORS */
+/*
+ * Media Queries
+ *
+ */
 /* functions */
 .inline {
   display: inline-block;
@@ -34,6 +37,10 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
   -o-transition: 0.25s ease-out all;
   transition: 0.25s ease-out all;
 }
+.fill {
+  display: block;
+  width: 100%;
+}
 .emboss {
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
 }
@@ -44,6 +51,11 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
   float: right;
 }
 /* framework */
+/*
+ * Construction
+ * -------------
+ * Borrowed from Foundation
+ */
 body {
   margin: 0;
 }
@@ -1329,19 +1341,10 @@ body {
   }
 }
 /* Basics */
-/**
-TYPOGRAPHY
-----
-This section describes the base type elements
-including type modifiers. Some of the styling
-has been borrowed from Bootstrap and Foundation.
-
-TODO:
-
-* media queries
-* expand "other elements"
-
-**/
+/*
+ * Typography
+ *
+ */
 *,
 *:before,
 *:after {
@@ -1519,9 +1522,17 @@ pre {
 img {
   max-width: 100%;
 }
+.warning {
+  color: #ff0000;
+}
+.success {
+  color: #008000;
+}
 /* sidebar */
-/************************* SIDEBAR
-**********************************************/
+/*
+ * Sidebar
+ *
+ */
 #inner-side > .widget-list:first-child h4 {
   margin-top: 25px;
 }
@@ -1628,6 +1639,10 @@ img {
   padding: .75em;
 }
 /* footer */
+/*
+ * Footer
+ *
+ */
 .footer {
   background: #222222;
   color: #e6e6e6;
@@ -1637,6 +1652,10 @@ img {
   color: #e6e6e6;
 }
 /* forms */
+/*
+ * Form
+ *
+ */
 form {
   margin: 0 0 1.5em;
 }
@@ -1682,6 +1701,12 @@ textarea {
 .form-vertical label,
 .form-vertical textarea {
   display: block;
+}
+.form-warning {
+  border-color: #ff0000;
+}
+.form-success {
+  border-color: #008000;
 }
 .form-message {
   display: block;
@@ -1940,11 +1965,10 @@ a img.aligncenter {
   font-weight: bold;
   font-size: 0.95em;
 }
-/**
-Button
----------
-
-**/
+/*
+ * Buttons
+ *
+ */
 .button {
   display: inline-block;
   margin-bottom: 0;
@@ -1989,8 +2013,10 @@ Button
   display: block;
 }
 /* MEDIA  QUERIES */
-/* #Media Queries
-================================================== */
+/*
+ * Media Queries
+ *
+ */
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
