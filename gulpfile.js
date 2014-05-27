@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var stripDebug = require('gulp-strip-debug');
 var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
+var less = require('gulp-less');
 
 gulp.task('scripts', function() {
   gulp.src(['./js/dev/*.js'])
@@ -15,15 +16,11 @@ gulp.task('styles', function() {
   gulp.src(['style.less', 'tiny-mce-style.less'])
     .pipe(autoprefix())
     .pipe(less())
+    .pipe(gulp.dest('./'))
   ;
 });
 
 gulp.task('default', ['scripts'], function(){
-  gulp.watch('./js/dev/*.js', function() {
-    gulp.run('jshint', 'scripts');
-  });
-
-  gulp.watch('./less/*.less', function() {
-    gulp.run('styles');
-  });
+  gulp.watch('./js/dev/*.js', ['jshint', 'scripts']);
+  gulp.watch('./less/*.less', ['styles']);
 });
