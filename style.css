@@ -1610,7 +1610,27 @@ img {
   text-decoration: none;
   padding: 0 15px;
 }
-.nav ul li a:hover {
+.nav ul li ul {
+  display: none;
+  position: absolute;
+  z-index: 9;
+}
+.nav ul li ul li {
+  display: block;
+  margin-left: 0;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #364451;
+  margin-top: -1px;
+}
+.nav ul li ul li a {
+  color: #364451;
+  display: block;
+}
+.nav > ul > li:hover ul {
+  display: block;
+}
+.nav > ul > li a:hover {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
   -webkit-transition: 0.25s ease-out all;
