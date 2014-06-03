@@ -1549,10 +1549,10 @@ img {
  * a
  */
 .nav-container .nav {
-  height: 3em;
   width: 62.5em;
   margin: 0 auto;
   padding: 0 0.9375em;
+  max-width: 100%;
 }
 .nav-main {
   background: #364451;
@@ -1647,7 +1647,7 @@ img {
   text-decoration: none;
 }
 .nav-right ul {
-  float: right;
+  text-align: right;
   display: block;
   width: auto;
   position: relative;
@@ -1657,6 +1657,21 @@ img {
 }
 .pagination {
   padding: .75em;
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  .nav-right ul {
+    text-align: left;
+  }
+  .nav ul {
+    clear: both;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .nav ul li {
+    display: block;
+  }
 }
 /* footer */
 /*
