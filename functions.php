@@ -9,14 +9,14 @@ TO DO
 define('SS_DIR', get_stylesheet_directory());
 define('SS_URI', get_stylesheet_directory_uri());
 define('SIDEBAR_COUNT', 3);
-define('ASSETS', SS_URI.'assets/');
+define('ASSETS', SS_URI.'/assets/');
 define('JS_DIR', SS_URI.'/js/src');
 /* LOAD SCRIPTS*/
 function load_scripts() {
   wp_enqueue_style('main', SS_URI.'/style.css', false, null, 'all');
   wp_enqueue_script('prettifyJS', ASSETS.'google-code-prettify/src/prettify.js', false, null, 'all');
   wp_enqueue_style('prettifyCSS', ASSETS.'google-code-prettify/src/prettify.css', false, null, 'all');
-  wp_enqueue_script('mainScript', JS_DIR.'/main.js', false, null, 'all');
+  wp_enqueue_script('mainScript', JS_DIR.'/main.js', array('prettifyJS', 'jquery'), null, 'all');
 }
 
 add_action( 'wp_enqueue_scripts', 'load_scripts');
