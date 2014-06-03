@@ -1,9 +1,8 @@
 <?php get_header();?>
-
 <section id="main-content" class="row">
   <section id="content-posts" class="large-8 columns feed-list">
      <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-      <?php /* If this is a category archive */ if (is_category()) { ?>
+     <?php /* If this is a category archive */ if (is_category()) { ?>
         <h1>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category:</h1>
       <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
         <h1>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h1>
