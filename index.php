@@ -24,7 +24,7 @@
       </article>
   <?php endwhile; endif;?>
     <div class="pagination">
-      <?php posts_nav_link( ' &#183 ', 'previous page &raquo;', ' &laquo; next page' ); ?>
+      <?php posts_nav_link( ' &#183 ', '&laquo; previous page', 'next page &raquo;' ); ?>
     </div>
   </section>
 
