@@ -50,7 +50,7 @@ Nope, never gonna happen. Tseczka is for developers, not for designers or for us
 Tseczka is a puzzle that used to be sold in Czech Republic that uses pieces of plastic shaped like "C"s and "S"s that could hook onto each other to create chains, bracelets, or whatever else for fun. It felt *fitting* to pick something that has to do with my heritage and that emphasizes modularity to create a final product.
 
 ###Cross browser support?
-I haven't tested yet but should be IE9+ and modern versions of newer browsers. My previous incarnations <2.0.1 supported IE7 and the old Opera engine
+I haven't tested yet but should be IE9+ and modern versions of newer browsers. My previous iterations <2.0.1 supported IE7 and the old Opera engine
 
 ###What makes this theme so special?
 
