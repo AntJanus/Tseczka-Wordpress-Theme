@@ -2,6 +2,7 @@
   "name": "Tseczka Wordpress Theme",
   "version": "3.0.0",
   "dependencies": {
-    "google-code-prettify": "1.0.x"
+    "google-code-prettify": "1.0.x",
+    "tseczka-CSS-framework": "x"
   }
 }

@@ -18,12 +18,19 @@ Theme URI: http://antjanus.com
 Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-post, microformats
 
 */
-/* Colors */
-/*
- * Media Queries
+/**
+ *
+ * Tseczka Framework
  *
  */
-/* functions */
+/*
+ * Variables
+ *
+ */
+/*
+ *  * Media Queries
+ *   *
+ *    */
 .inline {
   display: inline-block;
   vertical-align: top;
@@ -31,15 +38,15 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
 .block {
   display: block;
 }
+.fill {
+  display: block;
+  width: 100%;
+}
 .animate-all {
   -webkit-transition: 0.25s ease-out all;
   -moz-transition: 0.25s ease-out all;
   -o-transition: 0.25s ease-out all;
   transition: 0.25s ease-out all;
-}
-.fill {
-  display: block;
-  width: 100%;
 }
 .emboss {
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
@@ -50,7 +57,6 @@ Tags: white, two-columns, one-column, flexible-width, custom-background, sticky-
 .pull-right {
   float: right;
 }
-/* framework */
 /*
  * Construction
  * -------------
@@ -1340,11 +1346,19 @@ body {
     clear: both;
   }
 }
-/* Basics */
-/*
- * Typography
- *
- */
+/**
+TYPOGRAPHY
+----
+This section describes the base type elements
+including type modifiers. Some of the styling
+has been borrowed from Bootstrap and Foundation.
+
+TODO:
+
+* media queries
+* expand "other elements"
+
+**/
 *,
 *:before,
 *:after {
@@ -1528,7 +1542,6 @@ img {
 .success {
   color: #008000;
 }
-/* sidebar */
 /*
  * Sidebar
  *
@@ -1536,7 +1549,6 @@ img {
 #inner-side > .widget-list:first-child h4 {
   margin-top: 25px;
 }
-/* navigation */
 /*
  * Navbar
  *
@@ -1549,6 +1561,7 @@ img {
  * a
  */
 .nav-container .nav {
+  height: 3em;
   width: 62.5em;
   margin: 0 auto;
   padding: 0 0.9375em;
@@ -1562,6 +1575,9 @@ img {
 }
 .nav-main .nav-title {
   color: #ffffff;
+}
+.nav-logo img {
+  max-height: 100%;
 }
 .nav-secondary {
   background: #1c2733;
@@ -1610,6 +1626,9 @@ img {
   text-decoration: none;
   padding: 0 15px;
 }
+.nav ul li:hover ul {
+  display: block;
+}
 .nav ul li ul {
   display: none;
   position: absolute;
@@ -1627,10 +1646,7 @@ img {
   color: #364451;
   display: block;
 }
-.nav > ul > li:hover ul {
-  display: block;
-}
-.nav > ul > li a:hover {
+.nav ul li a:hover {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
   -webkit-transition: 0.25s ease-out all;
@@ -1658,7 +1674,6 @@ img {
 .pagination {
   padding: .75em;
 }
-/* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   .nav-right ul {
     text-align: left;
@@ -1667,13 +1682,11 @@ img {
     clear: both;
   }
 }
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   .nav ul li {
     display: block;
   }
 }
-/* footer */
 /*
  * Footer
  *
@@ -1686,7 +1699,6 @@ img {
 .footer a {
   color: #e6e6e6;
 }
-/* forms */
 /*
  * Form
  *
@@ -1746,7 +1758,6 @@ textarea {
 .form-message {
   display: block;
 }
-/* Worpress Specific */
 /************************* WORDPRESS CORE
 **********************************************/
 .alignnone {
@@ -1852,7 +1863,6 @@ a img.aligncenter {
 .entry-title a {
   color: #222222;
 }
-/* EXTRAS */
 /************************* COLUMNS
 **********************************************/
 /* ------- Fluid Columns ------- */
@@ -1918,6 +1928,10 @@ a img.aligncenter {
   padding: 0 !important;
   margin: 0 !important;
 }
+/*
+ * Lists
+ *
+ */
 .block-list {
   display: block;
   width: 100%;
@@ -1935,11 +1949,7 @@ a img.aligncenter {
   border-top-width: 0;
 }
 .comment-block > li:first-child {
-  border-radius: 3px 3px 0 0;
   border-top-width: 1px;
-}
-.comment-block > li:last-child {
-  border-radius: 0 0 3px 3px;
 }
 .list-meta {
   display: block;
@@ -1969,8 +1979,7 @@ a img.aligncenter {
   margin-top: 5px;
 }
 .feed-item .feed-content {
-  min-height: 175px;
-  padding: .75em 0;
+  min-height: 150px;
 }
 .widget-list h4 {
   margin-bottom: 0;
@@ -2047,7 +2056,6 @@ a img.aligncenter {
 .button.block {
   display: block;
 }
-/* MEDIA  QUERIES */
 /*
  * Media Queries
  *

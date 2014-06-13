@@ -1,35 +1,21 @@
-/* Colors */
-@import url('vars.less');
+@root: "../assets/tseczka-CSS-framework/less";
+@import "@{root}/info.less";
+@import "@{root}/vars.less";
 
-/* functions */
-@import url('functions.less');
+//override
+@import "vars.less";
 
-/* framework */
-@import url('construction.less');
+@import "@{root}/functions.less";
+@import "construction.less";
+@import "@{root}/typography.less";
+@import "sidebar.less";
+@import "@{root}/nav.less";
+@import "@{root}/footer.less";
+@import "@{root}/form.less";
+@import "wp.less";
+@import "wordpress/wpall.less";
+@import "extras/extras.less";
+@import "@{root}/extensions/lists.less";
+@import "@{root}/buttons.less";
 
-/* Basics */
-@import url('typography.less');
-
-/* sidebar */
-@import url('sidebar.less');
-
-/* navigation */
-@import url('navigation.less');
-
-/* footer */
-@import url('footer.less');
-
-/* forms */
-@import url('forms.less');
-
-/* Worpress Specific */
-@import url('wp.less');
-@import url('wordpress/wpall.less');
-
-/* EXTRAS */
-@import url('extras/extras.less');
-@import url('extras/lists.less');
-@import url('extras/buttons.less');
-
-/* MEDIA  QUERIES */
-@import url('mediaqueries.less');
+@import "@{root}/mediaqueries.less";
