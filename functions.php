@@ -35,6 +35,9 @@ include('functions/sidebars.php');
 //roots extras
 include('functions/roots-extras.php');
 
+//utils
+include('functions/utils.php');
+
 //menu
 register_nav_menus(
 		array(
